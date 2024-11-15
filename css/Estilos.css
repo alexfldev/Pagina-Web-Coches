@@ -1,0 +1,190 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", serif;
+  color: #ffffff;
+  /* background: url("ruta-a-tu-imagen-de-textura-lujo.jpg") no-repeat center center fixed;*/
+  background: #9d9d9d;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+  background-blend-mode: overlay;
+  box-sizing: border-box;
+}
+
+/* Encabezado */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffd700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  font-family: "Times New Roman", serif;
+  box-sizing: border-box;
+}
+
+/* Menú de navegación */
+.header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+  color: #ffd700;
+}
+
+/* Contenedor principal */
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 150px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 900px; */
+  /* Ajuste para centrado con espacio superior */
+  /* margin: 80px auto; 
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+  border: 2px solid #ffd700;
+} */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 150px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 775px;
+    /* margin: 100px auto; */
+    margin-top: 100px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.7);
+    border: 2px solid #ffd700;
+    box-sizing: border-box;
+}
+
+/* Título principal */
+.container h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #ffd700;
+  margin-bottom: 20px;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+  font-family: "Times New Roman", serif;
+}
+
+/* Texto adicional */
+.container p {
+  font-size: 1.3em;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  max-width: 700px;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* Imagen */
+.container img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  border: 3px solid #ffd700;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.container img:hover {
+  transform: scale(1.08);
+}
+
+/* Botón de llamada a la acción como enlace */
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  color: #000;
+  background-color: #ffd700;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de brillo en el botón */
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(-25deg);
+  transition: all 0.5s ease;
+}
+
+.cta-button:hover::before {
+  left: 125%;
+  transition: all 0.5s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffe066;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffd700;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    font-family: "Times New Roman", serif;
+    box-sizing: border-box;
+}
+
+

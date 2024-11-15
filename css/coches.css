@@ -1,0 +1,74 @@
+/* Ajuste del contenedor de la galería */
+.gallery-container {
+    max-width: 1200px;
+    margin: 150px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajustable para mejor distribución */
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Tarjeta de coche */
+.car-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    color: #ffd700;
+    transition: transform 0.3s ease;
+    border: 2px solid #ffd700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 500px; /* Altura mínima para uniformidad */
+}
+
+/* Estilo para las imágenes de coche */
+.car-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+    margin-bottom: 15px;
+}
+
+/* Título de cada tarjeta */
+.car-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Texto de descripción */
+.car-card p {
+    font-size: 1em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Para que el texto ocupe espacio y mantenga los botones alineados */
+}
+
+/* Botón de llamada a la acción */
+.car-card .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000;
+    background-color: #ffd700;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.car-card .cta-button:hover {
+    background-color: #ffe066;
+    transform: translateY(-3px);
+}
