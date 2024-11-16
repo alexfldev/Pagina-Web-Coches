@@ -1,5 +1,11 @@
 
 
+
+
+
+
+
+
 /* Encabezado */
 .header {
     display: flex;
@@ -36,6 +42,22 @@
 
 
 
+  /* General para toda la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    color: #ffffff;
+    background: #9d9d9d;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 50px; /* Espacio general inferior de la página */
+}
+
+
 
 
 
@@ -45,11 +67,12 @@
     padding: 40px 30px;
     border-radius: 15px;
     max-width: 700px;
-    margin: 50px auto;
+    margin: 50px auto; /* Mantén espacio superior e inferior */
     text-align: center;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
     border: 2px solid #ffd700;
-  }
+    margin-bottom: 100px; /* Añadido espacio inferior */
+}
   
   .contact-form h2 {
     font-size: 2.5em;
@@ -98,8 +121,8 @@
     outline: none;
   }
   
-  /* Botón de envío */
-  .submit-button {
+ /* Botón de envío */
+.submit-button {
     padding: 15px 40px;
     font-size: 1.2em;
     font-weight: bold;
@@ -111,8 +134,8 @@
     text-transform: uppercase;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  }
-  
+    margin-bottom: 20px; /* Añade espacio entre el botón y el borde inferior */
+}
   .submit-button:hover {
     background-color: #ffe066;
     transform: translateY(-3px);
