@@ -171,17 +171,65 @@ section::after {
 
 /* Pie de página */
 footer {
-  display: flex;
-  justify-content: center; /* Centramos el texto en el footer */
-  align-items: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   color: #ffd700;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 30px 50px;
   width: 100%;
-  position: relative; /* Cambiamos a relative para evitar que se solape */
-  bottom: 0;
-  z-index: 10;
   font-family: "Times New Roman", serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center; /* Centrado de texto */
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-section p {
+  font-size: 1em;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+}
+
+/* Estilo para los iconos de redes sociales */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
 }
