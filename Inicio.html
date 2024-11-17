@@ -1,76 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROLL ROYCE</title>
-    <link rel="stylesheet" href="css/Estilos.css" />
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
-  </head> 
-  <body>
-    <!-- Encabezado con logo y menú de navegación -->
-    <header class="header">
-      <div class="logo">
-        <!-- Rolls Royce -->
-        <img src="img/logo_ver2.png" alt="Rolls Royce" width="200" />
-      </div>
-      <nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolls Royce</title>
+  <link rel="stylesheet" href="css/Estilos.css">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="menu-left">
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+      <label for="menu-toggle" class="menu-button">MENU</label>
+      <div class="dropdown">
         <a href="#">Inicio</a>
         <a href="html/COCHES.HTML">Modelos</a>
         <a href="#">Servicios</a>
         <a href="html/Formulario.html">Contacto</a>
-      </nav>
-    </header>
-
-    <!-- Contenedor principal -->
-    <main class="container">
-      <h1>Coches de Lujo</h1>
-      <p>
-        Descubre toda nuestra colección de los coches más lujosos de nuestra
-        tienda, donde cada detalle refleja la máxima exclusividad y elegancia.
-      </p>
-      <img src="img/ross.jpg" alt="Imagen de coche de lujo" />
-
-      <!-- Botón de navegación como enlace a html/COCHES.HTML  -->
-      <a href="html/COCHES.HTML" class="cta-button">Navegar</a>
-    </main>
-        <!--Información de contacto
-
-    Copyright (ficticio)
-
-    Enlaces a redes sociales   -->
-    <br/>
-    <footer>
-      <div class="footer-container">
-        <!-- Información de contacto -->
-        <div class="footer-section">
-          <h3>Información de contacto</h3>
-          <p>Email: <a href="mailto:info@rollsroyce.com">info@rollsroyce.com</a></p>
-          <p>Teléfono: <a href="tel:+34123456789">+34 123 456 789</a></p>
-        </div>
-    
-        <!-- Copyright -->
-        <div class="footer-section">
-          <p>&copy; 2024 Rolls Royce</p>
-          <p>Todos los derechos reservados</p>
-        </div>
-    
-        <!-- Redes sociales -->
-        <div class="footer-section">
-          <h3>Síguenos</h3>
-          <div class="social-links">
-            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-              <img src="img/facebook-icon.png" alt="Facebook" />
-            </a>
-            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
-              <img src="img/twitter-icon.png" alt="Twitter" />
-            </a>
-            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-              <img src="img/instagram-icon.png" alt="Instagram" />
-            </a>
-          </div>
-        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="logo">
+      <img src="img/logo_ver2.png" alt="Rolls Royce">
+    </div>
+    <div class="menu-right">
+      <a href="#" class="menu-link">FIND A DEALER</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>PHANTOM</h1>
+      <h2>Goldfinger</h2>
+      <a href="#" class="cta-button">Discover Now</a>
+    </div>
+  </section>
+
+  <!-- Explore Further Section -->
+  <section class="explore-section">
+    <h2>Explore Further</h2>
+    <p>Continue your journey</p>
+    <div class="card-container">
+      <div class="card">
+        <img src="img/inspiring-greatness.jpg" alt="Inspiring Greatness">
+        <h3>Inspiring Greatness Series</h3>
+        <p>Exclusive stories from Rolls-Royce Motor Cars.</p>
+      </div>
+      <div class="card">
+        <img src="img/phantom-extended.jpg" alt="Phantom Extended">
+        <h3>Phantom Extended</h3>
+        <p>Surpassing expectations with Phantom Extended.</p>
+      </div>
+      <div class="card">
+        <img src="img/discover-bespoke.jpg" alt="Discover Bespoke">
+        <h3>Discover Bespoke</h3>
+        <p>Explore our bespoke collections and designs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2024 Rolls Royce. Todos los derechos reservados. | <a href="#">Privacidad</a></p>
+  </footer>
+</body>
 </html>

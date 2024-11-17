@@ -1,74 +1,157 @@
-/* Ajuste del contenedor de la galería */
-.gallery-container {
-    max-width: 1200px;
-    margin: 150px auto 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajustable para mejor distribución */
-    gap: 20px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-}
-
-/* Tarjeta de coche */
-.car-card {
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", serif;
+    color: #ffffff;
+    background-color: #000;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  /* Encabezado */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .header .logo img {
+    height: 50px;
+  }
+  
+  /* Menu toggle button */
+  .menu-left {
+    position: relative;
+  }
+  
+  /* Ocultar el checkbox */
+  .menu-checkbox {
+    display: none;
+  }
+  
+  /* Botón del menú */
+  .menu-button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Estilo del menú desplegable */
+  .dropdown {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 20px;
+    display: none; /* Ocultar por defecto */
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  
+  .dropdown a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .dropdown a:hover {
+    color: #ffd700;
+  }
+  
+  /* Mostrar el menú desplegable cuando el checkbox está activado */
+  .menu-checkbox:checked + .menu-button + .dropdown {
+    display: flex;
+  }
+  
+  /* Contenedor de la galería */
+  .gallery-container {
+    max-width: 1200px;
+    margin: 150px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustable */
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  /* Tarjetas de coches */
+  .car-card {
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 20px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-    color: #ffd700;
-    transition: transform 0.3s ease;
-    border: 2px solid #ffd700;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 500px; /* Altura mínima para uniformidad */
-}
-
-/* Estilo para las imágenes de coche */
-.car-card img {
+    color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ffd700;
+  }
+  
+  .car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Imagen dentro de las tarjetas */
+  .car-card img {
     max-width: 100%;
-    height: auto;
+    height: 200px; /* Tamaño uniforme */
+    object-fit: cover;
     border-radius: 10px;
     border: 2px solid #ffd700;
     margin-bottom: 15px;
-}
-
-/* Título de cada tarjeta */
-.car-card h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+  }
+  
+  /* Título del coche */
+  .car-card h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
     color: #ffd700;
+    text-transform: uppercase;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Texto de descripción */
-.car-card p {
+  }
+  
+  /* Descripción del coche */
+  .car-card p {
     font-size: 1em;
     color: #e0e0e0;
     margin-bottom: 20px;
-    flex-grow: 1; /* Para que el texto ocupe espacio y mantenga los botones alineados */
-}
-
-/* Botón de llamada a la acción */
-.car-card .cta-button {
+    line-height: 1.5;
+  }
+  
+  /* Botón dentro de las tarjetas */
+  .car-card .cta-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1em;
+    padding: 12px 25px;
+    font-size: 1.1em;
     color: #000;
     background-color: #ffd700;
     text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.car-card .cta-button:hover {
+  }
+  
+  .car-card .cta-button:hover {
     background-color: #ffe066;
     transform: translateY(-3px);
-}
+  }
+  
